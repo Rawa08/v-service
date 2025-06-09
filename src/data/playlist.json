@@ -1,0 +1,96 @@
+[
+  {
+    "id": "playlist-1",
+    "name": "Lunchmeny",
+    "images": [
+      {
+        "id": "img-001",
+        "url": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
+        "order": 1
+      },
+      {
+        "id": "img-002",
+        "url": "https://images.unsplash.com/photo-1555992336-03a23c7b20c7",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "playlist-2",
+    "name": "Kampanjer",
+    "images": [
+      {
+        "id": "img-003",
+        "url": "https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif",
+        "order": 1
+      },
+      {
+        "id": "img-004",
+        "url": "https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "playlist-3",
+    "name": "Tom spellista",
+    "images": []
+  },
+  {
+    "id": "playlist-4",
+    "name": "Kvällsmeny",
+    "images": [
+      {
+        "id": "img-005",
+        "url": "https://images.unsplash.com/photo-1600891964710-3a7c31e1e9e3",
+        "order": 1
+      }
+    ]
+  },
+  {
+    "id": "playlist-5",
+    "name": "Bildshow",
+    "images": [
+      {
+        "id": "img-006",
+        "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+        "order": 1
+      },
+      {
+        "id": "img-007",
+        "url": "https://images.unsplash.com/photo-1496307653780-42ee777d4833",
+        "order": 2
+      },
+      {
+        "id": "img-008",
+        "url": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+        "order": 3
+      },
+      {
+        "id": "img-009",
+        "url": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e",
+        "order": 4
+      },
+      {
+        "id": "img-010",
+        "url": "https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif",
+        "order": 5
+      },
+      {
+        "id": "img-011",
+        "url": "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
+        "order": 6
+      },
+      {
+        "id": "img-012",
+        "url": "https://images.unsplash.com/photo-1481349518771-20055b2a7b24",
+        "order": 7
+      },
+      {
+        "id": "img-013",
+        "url": "https://images.unsplash.com/photo-1503602642458-232111445657",
+        "order": 8
+      }
+    ]
+  }
+]

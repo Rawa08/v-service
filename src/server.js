@@ -3,6 +3,8 @@ const cors = require('cors');
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 const path = require('path');
+const playlistDataPath = path.join(__dirname, 'data', 'playlist.json');
+
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -51,6 +53,25 @@ app.post('/api/register-device', (req, res) => {
   writeDeviceRegistry(deviceRegistry);
 
   return res.json({ deviceId });
+});
+
+app.get('/api/get-playlists/:deviceId', (req, res) => {
+  const { deviceId } = req.params;
+
+  if (!deviceId) {
+    return res.status(400).json({ error: 'deviceId is required' });
+  }
+
+  try {
+    const rawData = fs.readFileSync(playlistDataPath, 'utf8');
+    const playlists = JSON.parse(rawData);
+
+   
+    return res.json(playlists);
+  } catch (err) {
+    console.error('Error reading playlist data:', err);
+    return res.status(500).json({ error: 'Could not read playlist data' });
+  }
 });
 
 app.listen(port, '0.0.0.0', () => {
