@@ -67,7 +67,7 @@ app.get('/api/get-playlists/:deviceId', (req, res) => {
     const playlists = JSON.parse(rawData);
 
    
-    return res.json(playlists);
+    return res.json({config: {},playlists});
   } catch (err) {
     console.error('Error reading playlist data:', err);
     return res.status(500).json({ error: 'Could not read playlist data' });
